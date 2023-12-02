@@ -1,17 +1,18 @@
 # https://adventofcode.com/2023/day/1
 
-import pathlib
 def lines():
     with open(file) as f:
         return [x.strip() for x in f.readlines()]
-file = str(pathlib.Path(__file__).parent.resolve()) + "/input/in.txt"
+
+TEST = 0
+file = "input/" + ("test.txt" if TEST else "in.txt")
 
 # Part 1:
 import re
 allLines = lines()
 total = 0
 
-for s    in allLines:
+for s in allLines:
     s = re.sub("[a-z]", "", s.lower())
     total += int(s[0] + s[-1])
 print(f"Part 1: {total}")

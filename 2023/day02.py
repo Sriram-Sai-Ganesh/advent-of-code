@@ -1,16 +1,11 @@
 # https://adventofcode.com/2023/day/2
-import pathlib
 
 def lines():
     with open(file) as f:
         return [x.strip() for x in f.readlines()]
 
 TEST = 0
-
-file = "/input/in.txt"
-if TEST:
-    file = "/input/test.txt"
-file = str(pathlib.Path(__file__).parent.resolve()) + file
+file='input/'+('test.txt' if TEST else 'in.txt')
 
 rows = lines()
 total1 = total2 = 0
