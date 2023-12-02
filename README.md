@@ -1,2 +1,2 @@
-# advent-of-code-2023
-Python solutions for (hopefully) all 25 days of the [Advent of Code](adventofcode.com/2023), 2023
+# advent-of-code
+Python solutions for problems in the [Advent of Code](adventofcode.com)
