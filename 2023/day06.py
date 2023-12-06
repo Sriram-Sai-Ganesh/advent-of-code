@@ -25,8 +25,8 @@ def ways(t,d):
     return w
 
 # Part 1: times read independently
-times=map(int, filter(lambda x:len(x)>0, all[0].split(':')[1].split()))
-dists=map(int, filter(lambda x:len(x)>0, all[1].split(':')[1].split()))
+times=map(int,sub('\D+',' ',all[0]).strip().split())
+dists=map(int,sub('\D+',' ',all[1]).strip().split())
 
 # run sim for Part 1
 for t, d in zip(times, dists):
